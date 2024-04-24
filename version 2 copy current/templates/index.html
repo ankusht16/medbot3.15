@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Chatbot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+            font-family: Arial, sans-serif;
+            color: #333; /* Default text color */
+            border-top: 0px solid rgb(91,209,215); /* Add thick border along the top */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        .container {
+            max-width: 600px; /* Limit container width */
+            margin: 0 auto; /* Center container horizontally */
+            padding: 20px; /* Add padding to container */
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative; /* Relative positioning for logo */
+        }
+
+        .logo {
+            position: absolute; /* Absolute positioning for logo */
+            top: 0; /* Position logo at the top */
+            left: 0; /* Position logo at the left */
+            margin: 10px; /* Add margin to logo */
+        }
+
+        .heading {
+            background-image: url(https://framerusercontent.com/images/2IaeICXvsJApqTXCae1q1dVMVIE.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0% 0%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: rgb(136, 136, 136);
+            font-size: 80px;
+            font-family: Outfit, sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            text-align: left;
+            letter-spacing: 0px;
+            white-space: normal;
+            line-height: 1;
+            margin: 0px;
+            padding: 0px 0px 10px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .subheader {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chatbox-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .chat-message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .user-message {
+            background-color: #cce5ff; /* Softer blue for user messages */
+            color: #333; /* Text color */
+        }
+
+        .bot-message {
+            background-color: #e2e3e5; /* Softer gray for bot messages */
+            color: #333; /* Text color */
+        }
+
+        .info-message {
+            background-color: #17a2b8; /* Teal for information messages */
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="C:\Users\haris\Downloads\Deep-Learning-Based-Chatbot-For-Medical-Assistance-master\version 2 copy current\roborinku.png" alt="Robot Doctor Logo" height="120" width="120">
+    </div>
+    <div class="container mt-5">
+        <div class="header">
+            <h1 class="heading">MEDICAL AI ASSISTANT</h1>
+        </div>
+        <p class="subheader">This medical AI assistant uses Deep Learning Neural Network technology to implement an LSTM model to provide immediate and easily accessible medical assistance to you.</p>
+        <h2 class="chatbox-header">Speak to the AI assistant through the below chatbox interface:</h2>
+        <div id="chat-container" class="mb-3"></div>
+        <textarea id="user-input" class="form-control" rows="3" placeholder="Type your message..."></textarea>
+        <button id="send-btn" class="btn btn-primary mt-3">Send</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#send-btn').click(function() {
+                var userMessage = $('#user-input').val().trim();
+                if (userMessage !== '') {
+                    // Display user message
+                    $('#chat-container').append('<div class="chat-message user-message">' + userMessage + '</div>');
+                    $('#user-input').val('');
+
+                    // Send user message to server
+                    $.ajax({
+                        type: 'POST',
+                        url: 'https://f4b2-35-204-175-134.ngrok-free.app',
+                        data: { user_message: userMessage },
+                        success: function(response) {
+                            // Display bot response
+                            $('#chat-container').append('<div class="chat-message bot-message">' + response.response + '</div>');
+                            // Display precautions if available
+                            if (response.precautions.length > 0) {
+                                $('#chat-container').append('<div class="chat-message info-message">Precautions: ' + response.precautions.join(', ') + '</div>');
+                            }
+                            // Display treatments if available
+                            if (response.treatments.length > 0) {
+                                $('#chat-container').append('<div class="chat-message info-message">Treatments: ' + response.treatments.join(', ') + '</div>');
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

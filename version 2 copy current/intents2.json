@@ -1,0 +1,906 @@
+{
+  "intents":[
+    {
+        "tag":"greeting",
+        "patterns":["Hi","How are you","Is anyone there?","Hello","Good day","Whats up"],
+        "responses":["Hello!","Hi there, how can I help?"],
+        "context_set":[]
+    },
+    {
+        "tag":"name",
+        "patterns":["what is your name","what should I call you","whats your name?"],
+        "responses":["You can call me bot.","I'm bot!","I'm bot."],
+        "context_set":[]
+    },
+    {
+        "tag":"problem_solving",
+        "patterns":["i need help","help me","tell me","i have some problem","problem","can you help me?"],
+        "responses":["yes i can help you","tell me what can i do for you","what do you want me to do","how can i help you","what kind of help do you need","tell me"],
+        "context_set":[]
+    },
+    {
+        "tag":"jaundice",
+        "patterns":["yellow skin","yellowish white part of eye","itching of the skin","light colored stools","dark colored urine"],
+        "responses":["you might be suffering from jaundice"],
+        "precautions":["Rest","Stay hydrated","Avoid alcohol"],
+        "treatments":["Consult a doctor for proper diagnosis","Medications as prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"emotional problems",
+        "patterns":["anxiety","depression fatigue","feeling tense","flashbacks and nightmares","disinterest in regular activities","suicidal thoughts","hallucinations","delusions"],
+        "responses":["you might be suffering from emotional problems"],
+        "precautions":["Seek support from friends and family","Consider therapy or counseling"],
+        "treatments":["Consult a mental health professional","Explore therapy options"],
+        "context_set":[]
+    },
+    {
+        "tag":"headache problems",
+        "patterns":["dizziness","nausea","vomiting","inability to walk"],
+        "responses":["you might be suffering from headache problems"],
+        "precautions":["Rest in a quiet and dark room","Stay hydrated"],
+        "treatments":["Over-the-counter pain relievers","Consult a doctor for severe cases"],
+        "context_set":[]
+    },
+    {
+        "tag":"appendicitis",
+        "patterns":["feeling sick (nausea)","being sick","loss of appetite","diarrhoea","a high temperature (fever) and a flushed face"],
+        "responses":["you might be suffering from appendicitis"],
+        "precautions":["Avoid eating or drinking before surgery","Follow post-surgery care instructions"],
+        "treatments":["Emergency surgery to remove the appendix"],
+        "context_set":[]
+    },
+    {
+        "tag":"anal cancer",
+        "patterns":["bleeding from the bottom (rectal bleeding)","itching and pain around the anus","small lumps around the anus","a discharge of mucus from the anus","loss of bowel control"],
+        "responses":["you might be suffering from anal cancer"],
+        "precautions":["Seek prompt medical attention for rectal bleeding","Follow prescribed treatment plan"],
+        "treatments":["Surgery, radiation, or chemotherapy as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"allergy",
+        "patterns":["sneezing and an itchy, runny or blocked nose","itchy, red, watering eyes","wheezing, chest tightness, shortness of breath and a cough","a raised, itchy, red rash (hives)","swollen lips, tongue, eyes or face","tummy pain, feeling sick, vomiting or diarrhoea","dry, red and cracked skin"],
+        "responses":["you might be suffering from allergy"],
+        "precautions":["Identify and avoid allergens","Use antihistamines as prescribed"],
+        "treatments":["Over-the-counter allergy medications","Consult an allergist for severe cases"],
+        "context_set":[]
+    },
+    {
+        "tag":"alcohol-related liver disease",
+        "patterns":["abdominal pain","loss of appetite","fatigue","feeling sick","diarrhoea","feeling generally unwell","yellowing of the skin and whites of the eyes (jaundice)","swelling in the legs, ankles and feet, due to a build-up of fluid","swelling in your abdomen, due to a build-up of fluid known as ascites","a high temperature (fever) and shivering attacks","very itchy skin","hair loss","unusually curved fingertips and nails (clubbed fingers)","blotchy red palms","significant weight loss","weakness and muscle wasting","confusion and memory problems, trouble sleeping (insomnia) and changes in your personality due to a build-up of toxins in the brain","vomiting blood and black, tarry stools due to internal bleeding","a tendency to bleed and bruise more easily, such as frequent nosebleeds and bleeding gums","increased sensitivity to alcohol and drugs"],
+        "responses":["you might be suffering from alcohol-related liver disease"],
+        "precautions":["Abstain from alcohol consumption","Follow a liver-friendly diet"],
+        "treatments":["Medical management","Lifestyle changes as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"bladder cancer",
+        "patterns":["a need to urinate on a more frequent basis","sudden urges to urinate","a burning sensation when passing urine"],
+        "responses":["you might be suffering from bladder cancer"],
+        "precautions":["Quit smoking","Maintain a healthy lifestyle"],
+        "treatments":["Surgery, chemotherapy, or immunotherapy as advised by the doctor"],
+        "context_set":[]
+    },
+    {
+        "tag":"dehydration",
+        "patterns":["dizziness","light headedness","headache","tiredness","dry mouth","dry lips","dry eyes","passing small amounts of urine infrequently"],
+        "responses":["you might be suffering from dehydration"],
+        "precautions":["Increase fluid intake","Avoid excessive physical activity in hot weather"],
+        "treatments":["Oral rehydration solutions","Medical attention for severe cases"],
+        "context_set":[]
+    },
+    {
+        "tag":"diabetic retinopathy",
+        "patterns":["gradually worsening vision","sudden vision loss","shapes floating in field of vision (floaters)","blurred vision","patchy vision","eye pain or redness"],
+        "responses":["you might be suffering from diabetic retinopathy"],
+        "precautions":["Manage blood sugar levels","Regular eye check-ups"],
+        "treatments":["Laser therapy, injections, or surgery as prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"type 2 diabetes",
+        "patterns":["urinating more often than usual, particularly at night","feeling very thirsty","feeling very tired","unexplained weight loss","itchiness around the genital area","cuts or wounds that heal slowly","blurred vision"],
+        "responses":["you might be suffering from type 2 diabetes"],
+        "precautions":["Monitor blood sugar levels regularly","Adopt a healthy diet and exercise routine"],
+        "treatments":["Medications, insulin therapy, or other prescribed interventions"],
+        "context_set":[]
+    },
+    {
+        "tag":"type 1 diabetes",
+        "patterns":["feeling very thirsty","urinating more frequently than usual","urinating particularly at night","feeling very tired","weight loss","loss of muscle bulk","itchiness around the genital area","regular bouts of thrush","blurred vision","the lens of eye changing shape"],
+        "responses":["you might be suffering from type 1 diabetes"],
+        "precautions":["Insulin therapy","Regular monitoring of blood sugar levels"],
+        "treatments":["Insulin therapy, lifestyle modifications, or other recommended interventions"],
+        "context_set":[]
+    },
+    {
+        "tag":"Hypoglycaemia",
+        "patterns":["feeling shaky and irritable","sweating","tingling lips","feeling weak","feeling confused","hunger","nausea","feeling sick"],
+        "responses":["you might be suffering from Hypoglycaemia (low blood glucose)"],
+        "precautions":["Consume glucose-rich foods or drinks","Carry glucose tablets for emergencies"],
+        "treatments":["Immediate intake of glucose-containing substances"],
+        "context_set":[]
+    },
+    {
+        "tag":"Hyperglycaemia",
+        "patterns":["extreme thirst","a dry mouth","blurred vision","drowsiness","need to pass urine frequently"],
+        "responses":["you might be suffering from Hyperglycaemia (high blood glucose)"],
+        "precautions":["Adjust insulin doses as prescribed","Monitor blood sugar levels closely"],
+        "treatments":["Insulin therapy, medications, or other recommended interventions"],
+        "context_set":[]
+    },
+    {
+        "tag":"diarrhoea",
+        "patterns":["stomach cramps","nausea","vomiting","headache","loss of appetite"],
+        "responses":["you might be suffering from diarrhoea"],
+        "precautions":["Stay hydrated with electrolyte solutions","Avoid dairy and spicy foods"],
+        "treatments":["Rehydration therapy","Medications to alleviate symptoms"],
+        "context_set":[]
+    },
+    {
+        "tag":"Ebola",
+        "patterns":["high temperature fever","headache","joint and muscle pain","sore throat","severe muscle weakness"],
+        "responses":["you might be suffering from Ebola"],
+        "precautions":["Isolate affected individuals","Follow strict infection control measures"],
+        "treatments":["Supportive care, antiviral medications if available"],
+        "context_set":[]
+    },
+    {
+        "tag":"kidney cancer",
+        "patterns":["extreme tiredness (fatigue) or anaemia","unintentional weight loss","a high temperature of 38C (100.4F) or above","night sweats","general sense of feeling unwell","swelling of the veins in the testicles (in men)","loss of appetite","high blood pressure (hypertension)"],
+        "responses":["you might be suffering from kidney cancer"],
+        "precautions":["Quit smoking","Maintain a healthy diet and exercise routine"],
+        "treatments":["Surgery, targeted therapy, or immunotherapy as advised by the doctor"],
+        "context_set":[]
+    },
+    {
+        "tag":"glandular fever",
+        "patterns":["a high temperature fever","sore throat","swollen glands","fatigue","extreme tiredness"],
+        "responses":["you might be suffering from glandular fever"],
+        "precautions":["Get plenty of rest","Stay hydrated","Avoid strenuous activities"],
+        "treatments":["Symptomatic relief, antiviral medications if prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"hay fever",
+        "patterns":["frequent sneezing","runny nose","blocked nose","itchy, red or watery eyes","itchy throat, mouth, nose and ears","cough"],
+        "responses":["you might be suffering from hay fever"],
+        "precautions":["Avoid allergens, such as pollen","Use antihistamines as prescribed"],
+        "treatments":["Over-the-counter allergy medications","Consult an allergist for severe cases"],
+        "context_set":[]
+    },
+    {
+        "tag":"fibromyalgia",
+        "patterns":["widespread pain"],
+        "responses":["you might be suffering from fibromyalgia"],
+        "precautions":["Regular exercise","Stress management techniques"],
+        "treatments":["Medications, physical therapy, or other recommended interventions"],
+        "context_set":[]
+    },
+    {
+        "tag":"eye cancer",
+        "patterns":["shadows, flashes of light, or wiggly lines in your vision","blurred vision","a dark patch in the eye","partial or total loss of vision","bulging of one eye","lump on eyelid or in eye that's increasing in size","pain in or around the eye"],
+        "responses":["you might be suffering from eye cancer"],
+        "precautions":["Regular eye check-ups","Seek prompt medical attention for visual disturbances"],
+        "treatments":["Surgery, radiation, or other recommended interventions"],
+        "context_set":[]
+    },
+    {
+        "tag":"COVID-19",
+        "patterns":["have a new cough that’s lasted for an hour","have had 3 or more episodes of coughing in 24 hours","are coughing more than usual","a new continuous cough","a fever/high temperature (37.8C or greater)"],
+        "responses":["you might be suffering from COVID-19"],
+        "precautions":["Isolate yourself from others","Follow public health guidelines"],
+        "treatments":["Supportive care, medical treatment as prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"common cold",
+        "patterns":["a sore throat","a blocked or runny nose","sneezing","a cough","a hoarse voice","generally feeling unwell"],
+        "responses":["you might be suffering from common cold"],
+        "precautions":["Rest","Stay hydrated","Use over-the-counter cold medications"],
+        "treatments":["Symptomatic relief, rest, and fluids"],
+        "context_set":[]
+    },
+    {
+        "tag":"chickenpox",
+        "patterns":["feeling sick","a high temperature (fever) of 38C (100.4F) or over","aching, painful muscles","headache","generally feeling unwell","loss of appetite"],
+        "responses":["you might be suffering from chickenpox"],
+        "precautions":["Isolate the affected person","Use antiviral medications as prescribed"],
+        "treatments":["Symptomatic relief, antiviral medications if prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"stroke",
+        "patterns":["facial drooping","arm weakness","difficulty with speech","rapidly developing dizziness or balance","sudden numbness or weakness","loss of vision","confusion","severe headache"],
+        "responses":["you might be suffering from stroke"],
+        "precautions":["Seek emergency medical attention","Follow stroke rehabilitation recommendations"],
+        "treatments":["Emergency medical intervention, rehabilitation"],
+        "context_set":[]
+    },
+    {
+        "tag":"breast problems",
+        "patterns":["nipple discharge","unusual breast tenderness or pain","breast or nipple skin changes","lump or thickening in or near the breast or in the underarm area."],
+        "responses":["you might be suffering from breast problems"],
+        "precautions":["Breast self-exams","Regular mammograms and clinical breast exams"],
+        "treatments":["Medical evaluation, imaging studies, and treatments as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"reproductive health problems",
+        "patterns":["bleeding or spotting between periods","itching, burning, or irritation in the genital area","pain or discomfort during sex","heavy or painful menstrual bleeding","severe pelvic/abdominal pain","unusual vaginal discharge","feeling of fullness in the lower abdomen","frequent urination or urinary urgency"],
+        "responses":["you might be suffering from reproductive health problems"],
+        "precautions":["Regular gynecological check-ups","Safe sex practices"],
+        "treatments":["Medical evaluation, imaging studies, and treatments as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"lung problems",
+        "patterns":["coughing up blood","shortness of breath","difficulty breathing","chronic cough","repeated bouts of bronchitis or pneumonia","wheezing"],
+        "responses":["you might be suffering from lung problems"],
+        "precautions":["Quit smoking","Avoid exposure to environmental toxins"],
+        "treatments":["Medical evaluation, pulmonary function tests, and treatments as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"bladder problems",
+        "patterns":["difficult or painful urination","frequent urination","loss of bladder control","blood in urine","waking frequently at night to urinate","wetting the bed at night","leaking urine"],
+        "responses":["you might be suffering from bladder problems"],
+        "precautions":["Maintain pelvic floor health","Stay hydrated"],
+        "treatments":["Medical evaluation, urodynamic studies, and treatments as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"eating or weight problems",
+        "patterns":["extreme thirst","dehydration","excessive hunger","losing weight without trying","binging, vomiting","starvation","preoccupation with food and weight","distorted body image","compulsive exercise","abuse of laxatives or diet pills","depression"],
+        "responses":["you might be suffering from eating or weight problems"],
+        "precautions":["Consult a nutritionist or dietitian","Seek psychological support if needed"],
+        "treatments":["Nutritional counseling, therapy, and medical management as recommended"],
+        "context_set":[]
+    },
+    {
+        "tag":"influenza",
+        "patterns":["headache","pain in the head","cough","fever","sneezing","runny nose","sore throat","pain in the throat","itching throat"],
+        "responses":["you might be suffering from influenza","you might be suffering from flu"],
+        "precautions":["Rest","Stay hydrated","Use over-the-counter flu medications"],
+        "treatments":["Symptomatic relief, antiviral medications if prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"asthma",
+        "patterns":["shortness of breath","chest pain or tightness","cough","sneezing"],
+        "responses":["you might be suffering from asthma"],
+        "precautions":["Use prescribed inhalers","Avoid triggers and allergens"],
+        "treatments":["Inhaled bronchodilators, corticosteroids, and other medications as prescribed"],
+        "context_set":[]
+    },
+    {
+        "tag":"hepatitis_B",
+        "patterns":["abdominal pain","fever","dark urine","joint pain","loss of appetite","nausea and vomiting","weakness and fatigue","yellowing of skin","jaundice"],
+        "responses":["you might be suffering from hepatitis_B"],
+        "precautions":["Practice safe sex","Get vaccinated against hepatitis B"],
+        "treatments":["Antiviral medications, supportive care, and vaccinations"],
+        "context_set":[]
+    },
+    {
+      "tag": "osteoarthritis",
+      "patterns": [
+        "repeated use of joints causes pain",
+        "wear and tear",
+        "pain in finger joints",
+        "pain in knees",
+        "pain in neck",
+        "pain in lower back",
+        "pain in hips",
+        "asymmetric pain",
+        "pain in whichever body part we use",
+        "in older people"
+      ],
+      "responses": [
+        "you might be suffering from osteoarthritis"
+      ],
+      "precautions": [
+        "Maintain a healthy weight",
+        "Exercise regularly to strengthen muscles around joints",
+        "Use assistive devices if necessary"
+      ],
+      "treatments": [
+        "Physical therapy to improve joint function",
+        "Medications for pain relief",
+        "In severe cases, joint replacement surgery may be necessary"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "rheumatoid_arthritis",
+      "patterns": [
+        "autoimmunity",
+        "genetic abnormalities",
+        "damage to body",
+        "pain in knuckles",
+        "pain in wrist",
+        "pain in arm joints",
+        "pain in feet",
+        "pain in ankles",
+        "pain in knees",
+        "pain in shoulders",
+        "pain in elbows",
+        "morning stiffness",
+        "pain increases upon resting",
+        "pain decreases while being active"
+      ],
+      "responses": [
+        "you might be suffering from rheumatoid arthritis"
+      ],
+      "precautions": [
+        "Maintain a balanced diet to support overall health",
+        "Avoid activities that strain the joints",
+        "Use assistive devices to reduce joint stress"
+      ],
+      "treatments": [
+        "Medications to reduce inflammation and slow joint damage",
+        "Physical therapy to improve joint function and strengthen muscles",
+        "In severe cases, surgery may be necessary to repair or replace damaged joints"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "uti",
+      "patterns": [
+        "frequent urination",
+        "burning sensation while urinating",
+        "burns when urination",
+        "burning feeling when peeing",
+        "burns when i pee",
+        "inability to start urine stream",
+        "urgency to go",
+        "lower abdomen pain"
+      ],
+      "responses": [
+        "you might be suffering from urinary tract infection (UTI)"
+      ],
+      "precautions": [
+        "Stay hydrated by drinking plenty of water",
+        "Practice good hygiene, especially after using the restroom",
+        "Avoid holding urine for long periods of time"
+      ],
+      "treatments": [
+        "Antibiotics prescribed by a healthcare professional",
+        "Drinking cranberry juice may help alleviate symptoms"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "type_1_diabetes",
+      "patterns": [
+        "frequent urination",
+        "weight loss",
+        "tired",
+        "young age",
+        "lack of insulin"
+      ],
+      "responses": [
+        "you might be suffering from type 1 diabetes"
+      ],
+      "precautions": [
+        "Monitor blood sugar levels regularly",
+        "Administer insulin injections as prescribed",
+        "Follow a balanced diet and exercise regularly"
+      ],
+      "treatments": [
+        "Insulin therapy to manage blood sugar levels",
+        "Continuous glucose monitoring for better control",
+        "Regular medical check-ups to monitor overall health"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "type_2_diabetes",
+      "patterns": [
+        "frequent urination",
+        "old age",
+        "insulin resistance"
+      ],
+      "responses": [
+        "you might be suffering from type 2 diabetes"
+      ],
+      "precautions": [
+        "Monitor blood sugar levels regularly",
+        "Adopt a healthy diet and exercise routine",
+        "Manage weight to improve insulin sensitivity"
+      ],
+      "treatments": [
+        "Medications to improve insulin sensitivity or increase insulin production",
+        "Lifestyle modifications, including diet and exercise",
+        "Regular medical check-ups to monitor blood sugar levels and overall health"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "syncope",
+      "patterns": [
+        "light headedness",
+        "dizziness",
+        "giddiness",
+        "passing out",
+        "knowing one is about to faint before it happens",
+        "triggered by long periods of standing",
+        "heat exposure",
+        "standing in sunlight",
+        "working physically a lot"
+      ],
+      "responses": [
+        "you might be experiencing syncope (fainting)"
+      ],
+      "precautions": [
+        "Avoid prolonged standing",
+        "Stay hydrated, especially in hot weather",
+        "Take breaks during physically demanding activities"
+      ],
+      "treatments": [
+        "Identify and address underlying causes, such as dehydration or heart conditions",
+        "Medications to regulate blood pressure or heart rhythm, if necessary",
+        "Lifestyle modifications to prevent fainting episodes"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "gastroenteritis",
+      "patterns": [
+        "diarrhoea",
+        "vomiting",
+        "nausea",
+        "abdominal pains",
+        "fever",
+        "after eating spoiled food",
+        "after eating contaminated food",
+        "after drinking contaminated water"
+      ],
+      "responses": [
+        "you might be suffering from gastroenteritis (food poisoning)"
+      ],
+      "precautions": [
+        "Stay hydrated by drinking clear fluids",
+        "Rest and avoid solid foods until symptoms improve",
+        "Practice good hygiene, especially after using the restroom"
+      ],
+      "treatments": [
+        "Symptomatic relief for nausea and diarrhoea",
+        "Oral rehydration solutions to prevent dehydration",
+        "In severe cases, medical attention may be necessary to manage complications"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "appendicitis",
+      "patterns": [
+        "extreme pain in lower right abdomen",
+        "lower right quadrant pain",
+        "pain in lower right part of belly",
+        "extreme pain in lower right part of stomach",
+        "it hurts a lot in the lower right part of my stomach"
+      ],
+      "responses": [
+        "you might be suffering from appendicitis"
+      ],
+      "precautions": [
+        "Seek immediate medical attention",
+        "Avoid taking pain relievers that may mask symptoms",
+        "Do not apply heat to the area, as it may worsen inflammation"
+      ],
+      "treatments": [
+        "Emergency surgery to remove the inflamed appendix (appendectomy)",
+        "Antibiotics may be prescribed before surgery to reduce infection risk"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "gastritis",
+      "patterns": [
+        "heartburn",
+        "upper abdominal pain",
+        "pain after eating spicy food"
+      ],
+      "responses": [
+        "you might be suffering from gastritis (acidity)"
+      ],
+      "precautions": [
+        "Avoid spicy and acidic foods",
+        "Eat smaller, more frequent meals",
+        "Avoid lying down after eating"
+      ],
+      "treatments": [
+        "Antacids or medications to reduce stomach acid production",
+        "Avoid alcohol and caffeine",
+        "Consider dietary changes and stress reduction techniques"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "hypothyroidism",
+      "patterns": [
+        "dry skin",
+        "cold intolerance",
+        "lack of sweating",
+        "weight gain",
+        "alopecia (hair loss)",
+        "constipation",
+        "decreased appetite",
+        "infertility",
+        "lethargy",
+        "depressed mood"
+      ],
+      "responses": [
+        "you might be suffering from hypothyroidism"
+      ],
+      "precautions": [
+        "Take prescribed thyroid hormone replacement medication regularly",
+        "Follow a balanced diet and exercise routine to manage weight",
+        "Stay warm in cold environments"
+      ],
+      "treatments": [
+        "Thyroid hormone replacement therapy",
+        "Regular thyroid function tests to monitor hormone levels",
+        "Management of symptoms such as constipation and depression"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "hyperthyroidism",
+      "patterns": [
+        "weight loss",
+        "excessive sweating",
+        "warm skin",
+        "alopecia (hair loss)",
+        "weakness",
+        "tremors",
+        "anxiety",
+        "insomnia",
+        "hyperactivity"
+      ],
+      "responses": [
+        "you might be suffering from hyperthyroidism"
+      ],
+      "precautions": [
+        "Take prescribed medications to manage thyroid hormone levels",
+        "Avoid stimulants such as caffeine",
+        "Practice stress reduction techniques"
+      ],
+      "treatments": [
+        "Antithyroid medications to reduce hormone production",
+        "Radioactive iodine therapy or thyroidectomy in severe cases",
+        "Management of symptoms such as tremors and anxiety"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "cushing_syndrome",
+      "patterns": [
+        "buffalo hump on back of neck",
+        "trunk obesity",
+        "pot belly",
+        "moon face",
+        "purple marks on body skin (striae)",
+        "high sugar levels"
+      ],
+      "responses": [
+        "you might be suffering from Cushing syndrome"
+      ],
+      "precautions": [
+        "Follow prescribed treatment plan and medications",
+        "Manage weight through diet and exercise",
+        "Monitor blood sugar levels regularly"
+      ],
+      "treatments": [
+        "Address the underlying cause, such as reducing corticosteroid medication if applicable",
+        "Medications to control cortisol levels",
+        "Surgery to remove tumors causing the syndrome"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "gastric_ulcer",
+      "patterns": [
+        "weight loss due to ulcer pain",
+        "abdominal pain",
+        "pain in stomach when eating"
+      ],
+      "responses": [
+        "you might be suffering from a gastric ulcer"
+      ],
+      "precautions": [
+        "Avoid spicy and acidic foods that may irritate the stomach lining",
+        "Eat smaller, more frequent meals to reduce stomach acid production",
+        "Avoid smoking and excessive alcohol consumption"
+      ],
+      "treatments": [
+        "Medications to reduce stomach acid production and promote healing of the ulcer",
+        "Antibiotics if the ulcer is caused by H. pylori bacteria",
+        "Avoiding nonsteroidal anti-inflammatory drugs (NSAIDs) that can worsen ulcers"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "duodenal_ulcer",
+      "patterns": [
+        "increased acid secretion",
+        "pain unless eating",
+        "abdominal pain relieved by eating",
+        "weight gain"
+      ],
+      "responses": [
+        "you might be suffering from a duodenal ulcer"
+      ],
+      "precautions": [
+        "Avoid foods that trigger symptoms, such as spicy and acidic foods",
+        "Eat smaller, more frequent meals to reduce stomach acid production",
+        "Avoid smoking and excessive alcohol consumption"
+      ],
+      "treatments": [
+        "Medications to reduce stomach acid production and promote healing of the ulcer",
+        "Antibiotics if the ulcer is caused by H. pylori bacteria",
+        "Avoiding nonsteroidal anti-inflammatory drugs (NSAIDs) that can worsen ulcers"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "celiac_disease",
+      "patterns": [
+        "diarrhoea after eating gluten",
+        "weight loss due to diarrhoea",
+        "fatty diarrhoea (steatorrhea)",
+        "iron deficiency",
+        "bloating",
+        "abdominal distension"
+      ],
+      "responses": [
+        "you might be suffering from celiac disease"
+      ],
+      "precautions": [
+        "Follow a strict gluten-free diet to manage symptoms",
+        "Read food labels carefully to avoid gluten-containing ingredients",
+        "Consider consulting a dietitian for guidance on gluten-free eating"
+      ],
+      "treatments": [
+        "Strict adherence to a gluten-free diet is the primary treatment",
+        "Supplementation with vitamins and minerals as needed, such as iron and calcium",
+        "Monitoring for other autoimmune conditions that may accompany celiac disease"
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "intussusception",
+      "patterns": [
+        "intermittent abdominal pain",
+        "bloody mucus in stools",
+        "baby draws legs to chest"
+      ],
+      "responses": [
+        "Your baby might be suffering from intussusception."
+      ],
+      "precautions": [
+        "Seek immediate medical attention if you notice these symptoms in your baby.",
+        "Do not attempt to treat at home without medical advice."
+      ],
+      "treatments": [
+        "Treatment usually involves a medical procedure to correct the problem.",
+        "Surgery may be required in severe cases."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "cirrhosis",
+      "patterns": [
+        "jaundice",
+        "yellowing of the body",
+        "bloody vomiting",
+        "black stools",
+        "pot belly",
+        "peripheral edema",
+        "nausea",
+        "dull abdominal pain",
+        "bad breath",
+        "flapping tremors in hands"
+      ],
+      "responses": [
+        "You might be suffering from cirrhosis."
+      ],
+      "precautions": [
+        "Seek medical attention immediately if you notice these symptoms.",
+        "Avoid alcohol consumption.",
+        "Follow a healthy diet and lifestyle."
+      ],
+      "treatments": [
+        "Treatment aims to manage symptoms and prevent further liver damage.",
+        "This may include medications, lifestyle changes, and in severe cases, liver transplant."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "neonatal_jaundice",
+      "patterns": [
+        "baby skin is yellow",
+        "jaundice in babies",
+        "appeared within 24 hours after birth",
+        "considered normal",
+        "resolves by itself"
+      ],
+      "responses": [
+        "Your baby might be experiencing physiological neonatal jaundice."
+      ],
+      "precautions": [
+        "Monitor the baby's condition closely.",
+        "Ensure regular check-ups with a healthcare provider.",
+        "Seek medical advice if jaundice persists beyond the expected timeframe or if other concerning symptoms develop."
+      ],
+      "treatments": [
+        "Treatment is typically not required as the condition resolves on its own in most cases.",
+        "In severe cases or if jaundice persists, phototherapy may be recommended by a healthcare provider."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "biliary_atresia",
+      "patterns": [
+        "persistent jaundice after 2 weeks",
+        "dark urine",
+        "pale stools"
+      ],
+      "responses": [
+        "Your baby might be suffering from biliary atresia."
+      ],
+      "precautions": [
+        "Seek immediate medical attention if you notice these symptoms in your baby.",
+        "Prompt diagnosis and treatment are crucial for better outcomes."
+      ],
+      "treatments": [
+        "Surgical intervention to restore bile flow may be necessary.",
+        "Early detection and management are important to prevent complications."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "gerd",
+      "patterns": [
+        "heartburn",
+        "regurgitation",
+        "indigestion",
+        "cough"
+      ],
+      "responses": [
+        "You might be suffering from gastroesophageal reflux disease (GERD)."
+      ],
+      "precautions": [
+        "Avoid trigger foods that worsen symptoms, such as spicy or acidic foods, caffeine, and fatty foods.",
+        "Eat smaller, more frequent meals.",
+        "Avoid lying down or bending over after eating.",
+        "Raise the head of your bed to reduce nighttime reflux."
+      ],
+      "treatments": [
+        "Over-the-counter antacids or medications such as proton pump inhibitors (PPIs) may help relieve symptoms.",
+        "In severe cases, prescription medications or surgery may be necessary.",
+        "Consult a healthcare professional for personalized treatment recommendations."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "gallbladder_stones",
+      "patterns": [
+        "occurs in overweight females",
+        "typically in their 40s",
+        "pain worsens after eating fatty meals",
+        "pain may radiate to the back"
+      ],
+      "responses": [
+        "You might be suffering from gallbladder stones."
+      ],
+      "precautions": [
+        "Seek medical attention if you experience symptoms of gallbladder stones.",
+        "Maintain a healthy weight and diet to reduce the risk of gallstones formation."
+      ],
+      "treatments": [
+        "Treatment options include medications to dissolve stones, or surgery to remove the gallbladder (cholecystectomy).",
+        "Consult a healthcare professional for personalized treatment recommendations."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "prolapsed_disc",
+      "patterns": [
+        "back pain in older people",
+        "pain in the center of the back",
+        "pain worsens upon bending forward",
+        "pain radiates to the leg or thigh",
+        "pain increases on lifting weights",
+        "pain improves with rest"
+      ],
+      "responses": [
+        "You might be suffering from a prolapsed disc."
+      ],
+      "precautions": [
+        "Avoid activities that worsen symptoms, such as heavy lifting or prolonged sitting.",
+        "Practice good posture and use proper body mechanics when lifting objects.",
+        "Engage in exercises that strengthen the back and core muscles to provide support to the spine."
+      ],
+      "treatments": [
+        "Treatment options may include pain management with medications or physical therapy.",
+        "In severe cases, surgical intervention may be necessary.",
+        "Consult a healthcare professional for personalized treatment recommendations."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "urticaria",
+      "patterns": [
+        "allergy to anything causes hives on the skin",
+        "itchy skin",
+        "bumpy, itchy hives on the skin",
+        "wheals and flares"
+      ],
+      "responses": [
+        "You might be suffering from urticaria."
+      ],
+      "precautions": [
+        "Identify and avoid triggers that cause allergic reactions.",
+        "Take antihistamines or other prescribed medications to relieve symptoms.",
+        "Seek medical attention if symptoms are severe or persistent."
+      ],
+      "treatments": [
+        "Treatment may involve antihistamines, corticosteroids, or other medications to reduce inflammation and relieve itching.",
+        "In severe cases, other treatments such as immunosuppressants or biologic therapies may be necessary.",
+        "Consult a healthcare professional for personalized treatment recommendations."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "albinism",
+      "patterns": [
+        "completely fair skin from birth",
+        "white skin throughout the body"
+      ],
+      "responses": [
+        "You might be suffering from albinism."
+      ],
+      "precautions": [
+        "Protect skin and eyes from sun exposure by wearing sunscreen, protective clothing, and sunglasses.",
+        "Regularly monitor skin for signs of damage or skin cancer.",
+        "Seek medical advice for any related health issues or concerns."
+      ],
+      "treatments": [
+        "There is no cure for albinism, but treatment focuses on managing symptoms and preventing complications.",
+        "Consult a healthcare professional for personalized recommendations and care."
+      ],
+      "context_set": []
+    },
+    {
+      "tag": "vitiligo",
+      "patterns": [
+        "patches of white skin",
+        "depigmentation over time",
+        "patches may increase throughout life"
+      ],
+      "responses": [
+        "You might be suffering from vitiligo."
+      ],
+      "precautions": [
+        "Protect depigmented areas from sun exposure to prevent sunburn and worsening of symptoms.",
+        "Seek medical advice for appropriate management and treatment options.",
+        "Consider counseling or support groups to cope with emotional aspects of the condition."
+      ],
+      "treatments": [
+        "Treatment options may include topical corticosteroids, phototherapy, or depigmentation therapy to even skin tone.",
+        "Consult a dermatologist or healthcare professional for personalized treatment recommendations."
+      ],
+      "context_set": []
+    },
+    {
+      "tag":"Dengue",
+      "patterns":["headache","fever","muscle pain","joint pain","pain behind eyes","nausea and vomiting","rashes","minor bleeding from gums or nose"],
+      "responses":["you might be suffering from Dengue"],
+      "precautions":["Use mosquito repellent","Eliminate mosquito breeding sites"],
+      "treatments":["Fluid replacement, pain relievers, and medical care as needed"],
+      "context_set":[]
+    }
+
+  ]
+}
